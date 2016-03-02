@@ -1,0 +1,17 @@
+﻿ul, body { margin:0px; padding:0px; }
+ul li { list-style:none;  }
+.menu-icon { position:fixed; top:26px; left:calc(100vw - 60px); width:30px; height:40px; z-index:5; cursor:pointer; }
+.menu-icon i { position:absolute; height:5px; width:30px; background:black; transition:all 0.5s ease-out 0s; }
+.menu-icon i.top { top:0px; }
+.menu-icon i.middle { top:10px; }
+.menu-icon i.bottom { top:20px; }
+.menu-icon.active i.top { top:10px; transform:rotate(45deg); }
+.menu-icon.active i.middle { opacity:0; }
+.menu-icon.active i.bottom { top:10px; transform:rotate(-45deg); }
+.menubg { background:#ff0000; position:absolute; height:30px; width:30px; border-radius:50%; right:25px; top:21px; z-index:2; transition:all 0.5s ease-out 0s; }
+.menubg-wrapper { position:absolute; background:rgba(0,0,0,0.2); left:0px; right:0px;bottom:0px; top:0px; z-index:1; height:100vh; width:100%; overflow:hidden; display:none; }
+ul  { z-index:4; position:relative; width:100%; margin-right:100px; }
+ul li  {  text-align:center; display:none;  }
+ul li a { padding:30px 20px; color:#fff; font-size:30px; display:block; }
+.temp-height { height:300vh; }
+.overflow-hide { overflow:hidden; }
